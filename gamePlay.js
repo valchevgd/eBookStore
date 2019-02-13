@@ -33,7 +33,7 @@ function gamePlay() {
         fireBallSpeedIndex: 5,
         rateOfFire: 800,
         cloudSpawnInterval: 3800,
-        bugSpawnInterval : 3000,
+        bugSpawnInterval : 2800,
         bugSpeedIndex : 4.5,
         healthKitInterval : 50000,
         manaKitInterval : 40000,
@@ -277,7 +277,7 @@ function gamePlay() {
             underHundred = true;
         }
 
-        if (timestamp / game.level > 10000 && game.level < 30){
+        if (timestamp / game.level > 10000 && game.level < 28){
             game.level++;
             game.bugSpeedIndex += 0.1;
             game.bugSpawnInterval -= 100;
