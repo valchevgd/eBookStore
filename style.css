@@ -81,7 +81,7 @@ body{
 }
 
 .wizard{
-    background-image: url("../resources/wizard.png");
+    background-image: url("resources/wizard.png");
     background-size: cover;
     position: absolute;
     width: 82px;
@@ -90,7 +90,7 @@ body{
 }
 
 .wizard-fire{
-    background-image: url("../resources/wizard-fire.png");
+    background-image: url("resources/wizard-fire.png");
     background-size: cover;
 }
 
@@ -98,7 +98,7 @@ body{
     position: absolute;
     width: 40px;
     height: 40px;
-    background-image: url("../resources/fire-ball.png");
+    background-image: url("resources/fire-ball.png");
     background-size: cover;
     z-index: 90;
 }
@@ -108,7 +108,7 @@ body{
     position: absolute;
     width: 150px;
     height: 150px;
-    background-image: url("../resources/cloud.png");
+    background-image: url("resources/cloud.png");
     background-size: cover;
     color: white;
 }
@@ -117,7 +117,7 @@ body{
     position: absolute;
     width: 60px;
     height: 60px;
-    background-image: url("../resources/bug.png");
+    background-image: url("resources/bug.png");
     background-size: cover;
 }
 
@@ -125,7 +125,7 @@ body{
     position: absolute;
     width: 50px;
     height: 50px;
-    background-image: url("../resources/manaKit.png");
+    background-image: url("resources/manaKit.png");
     background-size: cover;
 }
 
@@ -133,7 +133,7 @@ body{
     position: absolute;
     width: 50px;
     height: 50px;
-    background-image: url("../resources/healthKit.png");
+    background-image: url("resources/healthKit.png");
     background-size: cover;
 }
 
@@ -141,6 +141,6 @@ body{
     position: absolute;
     width: 180px;
     height: 156px;
-    background-image: url("../resources/tree.png");
+    background-image: url("resources/tree.png");
     background-size: cover;
 }

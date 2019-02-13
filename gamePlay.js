@@ -277,7 +277,7 @@ function gamePlay() {
             underHundred = true;
         }
 
-        if (timestamp / game.level > 10000){
+        if (timestamp / game.level > 10000 && game.level < 30){
             game.level++;
             game.bugSpeedIndex += 0.1;
             game.bugSpawnInterval -= 100;
@@ -352,6 +352,7 @@ function gamePlay() {
         scene.lastTreeSpawn = 0;
         game.bugSpeedIndex = 4.5;
         game.bugSpawnInterval = 3000;
+        game.level = 0;
         player.isActive = true;
 
         onGameStart();
