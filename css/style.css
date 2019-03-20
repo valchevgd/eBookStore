@@ -1,0 +1,16 @@
+section{
+    font-size: 20px;
+    max-width: 25vw;
+    margin: 5rem auto;
+    text-align: center;
+    background: #2a7ae2;
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
