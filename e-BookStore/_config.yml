@@ -1,6 +1,7 @@
 title: eBook Store
 email: valchevgd@gmail.com
 description: Find Your Favorite Book
+destination: docs
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  valchevgd
