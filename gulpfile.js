@@ -1,11 +1,12 @@
-"use strict";
+'use strict';
 
-let gulp = require("gulp"),
-    autoprefixer = require("gulp-autoprefixer"),
+let gulp = require('gulp'),
+    autoprefixer = require('gulp-autoprefixer'),
+    cp = require("child_process"),
     browserSync = require('browser-sync').create()
 ;
 
-gulp.task("css", function() {
+gulp.task('css', function() {
     return gulp.src( '_assets/css/**/*.css' )
         .pipe( autoprefixer() )
         .pipe( gulp.dest( './docs/css/' ) )
@@ -13,11 +14,19 @@ gulp.task("css", function() {
         ;
 });
 
-gulp.task("watch", function() {
+
+gulp.task('jekyll', function () {
+
+    return cp.exec("jekyll build");
+
+
+});
+
+gulp.task('watch', function() {
 
     browserSync.init({
         server: {
-            baseDir: "./docs/"
+            baseDir: './docs/'
         }
     });
 
@@ -26,6 +35,18 @@ gulp.task("watch", function() {
     gulp.watch( 'docs/**/*.html' ).on('change', browserSync.reload );
     gulp.watch( 'docs/**/*.js' ).on('change', browserSync.reload );
 
+    gulp.watch(
+        [
+            './*.html',
+            './_includes/**/*',
+            './_layouts/**/*',
+            './_pages/**/*',
+            './_posts/**/*',
+            './_projects/**/*'
+        ],
+        gulp.series('jekyll', 'css')
+    );
+
 });
 
-gulp.task("default", gulp.series("watch"));
+gulp.task('default', gulp.series('css', 'watch'));
