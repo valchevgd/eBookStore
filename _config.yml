@@ -2,8 +2,8 @@ title: eBook Store
 email: valchevgd@gmail.com
 description: Find Your Favorite Book
 destination: docs
-baseurl: "/eBookStore"
-#baseurl: ""
+#baseurl: "/eBookStore"
+baseurl: ""
 url: ""
 github_username:  valchevgd
 exclude: [_assets]
