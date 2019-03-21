@@ -43,9 +43,7 @@ gulp.task('watch', function() {
             './_pages/**/*',
             './_posts/**/*',
             './_projects/**/*'
-        ],
-        gulp.series('jekyll', 'css')
-    );
+        ]).on('change',  gulp.series('jekyll', 'css'));
 
 });
 
