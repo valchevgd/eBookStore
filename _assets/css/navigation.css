@@ -1,0 +1,28 @@
+.nav{
+    display: flex;
+    background: #3371FF;
+    font-size: 20px;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    margin-left: auto;
+}
+
+.nav ul li {
+    list-style: none;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav ul li ul{
+    display: none;
+}
+
+.nav span.site-title{
+    padding: 0.5rem 0 0.5rem 2rem;
+    font-size: 1.2em;
+}
