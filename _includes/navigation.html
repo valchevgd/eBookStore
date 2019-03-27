@@ -12,6 +12,7 @@
         </li>
         {% endif %}
         {% endfor %}
+        {% if page.title == 'Home' or page.title == 'About' %}
         <li>Register
             <ul>
                 <li>
@@ -40,6 +41,15 @@
                 </li>
             </ul>
         </li>
+        {% else %}
+        <li>
+            Cart <i class="fas fa-shopping-cart"></i>
+            <ul>
+                <li><p>Order One</p></li>
+                <li><p>Order Two</p></li>
+            </ul>
+        </li>
+        {% endif %}
     </ul>
 
 

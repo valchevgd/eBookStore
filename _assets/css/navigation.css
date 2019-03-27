@@ -5,9 +5,14 @@
     align-items: center;
 }
 
-.nav ul{
+.nav > ul{
     display: flex;
     margin-left: auto;
+}
+
+.nav > ul > ul li{
+    display: block;
+    margin-right: 0;
 }
 
 .nav ul li {
@@ -16,13 +21,33 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
-}
-
-.nav ul li ul{
-    display: none;
+    position: relative;
 }
 
 .nav span.site-title{
     padding: 0.5rem 0 0.5rem 2rem;
     font-size: 1.2em;
+}
+
+/*dropdown*/
+
+.nav > ul ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: -20%;
+    background: #3371FF;
+    padding: 1rem 0 2rem 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-1rem);
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.nav li:hover > ul{
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
 }
