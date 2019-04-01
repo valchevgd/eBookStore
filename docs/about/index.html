@@ -7,6 +7,7 @@
 </head>
 <body>
 <header>
+    <section class="img"></section>
     <nav class="nav">
     <span class="site-title"><a href="../home">eBookStore</a></span>
 
@@ -79,8 +80,37 @@
 </nav>
 
 </header>
-<main>
 
+<main>
+    <section class="slideshow">
+        <div class="slideshow-container">
+    <div class="my-slide">
+        <div class="text">Sale: <span id="sale"><a href="#">Book One Price:$12</a></span></div>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+
+    function showSlides() {
+
+        let books = ['Book One Price $12', 'Book Two Price $10', 'Book Three price $15'];
+        let slide = document.getElementById('sale');
+
+        slide.innerHTML = `<a href="#">${books[slideIndex]}</a>`;
+
+        slideIndex++;
+        if (slideIndex >= books.length) {
+            slideIndex = 0
+        }
+
+        setTimeout(showSlides, 5000);
+    }
+</script>
+    </section>
+    <section class="content">
     This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:
@@ -94,9 +124,20 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll
 
+    </section>
+    <section class="sidebar">
+        <aside>
+    <section>
+        <p>Side bat goes here</p>
+    </section>
+</aside>
+    </section>
 </main>
+
 <footer>
-   <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/valchevgd">&copy;valchevgd</a></p>
+    <section>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/valchevgd">&copy;valchevgd</a></p>
+</section>
 </footer>
 </body>
 </html>

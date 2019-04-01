@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eBookStore | Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <section class="img"></section>
+    <nav class="nav">
+    <span class="site-title"><a href="../home">eBookStore</a></span>
+
+    <ul>
+        
+        
+        <li>
+            <a href="/about/">
+                <span class="title">About</span>
+                <span class="date"></span>
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/contacts/">
+                <span class="title">Contacts</span>
+                <span class="date"></span>
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/home/">
+                <span class="title">Home</span>
+                <span class="date"></span>
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        <li>Register
+            <ul>
+                <li>
+                    <form>
+                        <label for="reg_email">Email:</label>
+                        <input type="email" id="reg_email">
+                        <label for="reg_password">Password:</label>
+                        <input type="password" id="reg_password">
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input type="password" id="confirm_password">
+                        <button>Register</button>
+                    </form>
+                </li>
+            </ul>
+        </li>
+        <li>Log In
+            <ul>
+                <li>
+                    <form>
+                        <label for="log_email">Email:</label>
+                        <input type="email" id="log_email">
+                        <label for="log_password">Password:</label>
+                        <input type="password" id="log_password">
+                        <button>Log In</button>
+                    </form>
+                </li>
+            </ul>
+        </li>
+        
+    </ul>
+
+
+</nav>
+
+</header>
+
+<main>
+    <section class="slideshow">
+        <div class="slideshow-container">
+    <div class="my-slide">
+        <div class="text">Sale: <span id="sale"><a href="#">Book One Price:$12</a></span></div>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+
+    function showSlides() {
+
+        let books = ['Book One Price $12', 'Book Two Price $10', 'Book Three price $15'];
+        let slide = document.getElementById('sale');
+
+        slide.innerHTML = `<a href="#">${books[slideIndex]}</a>`;
+
+        slideIndex++;
+        if (slideIndex >= books.length) {
+            slideIndex = 0
+        }
+
+        setTimeout(showSlides, 5000);
+    }
+</script>
+    </section>
+    <section class="content">
+    <section>Main part</section>
+
+
+    </section>
+    <section class="sidebar">
+        <aside>
+    <section>
+        <p>Side bat goes here</p>
+    </section>
+</aside>
+    </section>
+</main>
+
+<footer>
+    <section>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/valchevgd">&copy;valchevgd</a></p>
+</section>
+</footer>
+</body>
+</html>

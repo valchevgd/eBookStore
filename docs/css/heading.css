@@ -1,0 +1,6 @@
+.img{
+    height: 20vh;
+    background-image: url("../img/heading.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

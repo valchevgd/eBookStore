@@ -1,0 +1,25 @@
+.slideshow-container{
+    background: orange;
+    color: white;
+}
+
+#sale {
+    -webkit-animation-name: example;
+            animation-name: example;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+
+@-webkit-keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1; }
+}
+
+@keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1; }
+}

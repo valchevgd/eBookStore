@@ -1,5 +1,19 @@
 @import "typography.css";
 @import "working.css";
 @import "navigation.css";
+@import "gird.css";
+@import "slideshow.css";
+@import "heading.css";
 
+body{
+    max-width: 90%;
+    margin: 0 auto;
+}
 
+main{
+    background-color: #cccccc;
+}
+
+footer{
+    background: #3371FF;
+}

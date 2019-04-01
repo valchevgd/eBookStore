@@ -1,0 +1,26 @@
+<div class="slideshow-container">
+    <div class="my-slide">
+        <div class="text">Sale: <span id="sale"><a href="#">Book One Price:$12</a></span></div>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+
+    function showSlides() {
+
+        let books = ['Book One Price $12', 'Book Two Price $10', 'Book Three price $15'];
+        let slide = document.getElementById('sale');
+
+        slide.innerHTML = `<a href="#">${books[slideIndex]}</a>`;
+
+        slideIndex++;
+        if (slideIndex >= books.length) {
+            slideIndex = 0
+        }
+
+        setTimeout(showSlides, 5000);
+    }
+</script>

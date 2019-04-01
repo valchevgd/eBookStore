@@ -7,14 +7,24 @@
 </head>
 <body>
 <header>
+    {% include heading.html %}
     {% include navigation.html %}
 </header>
-<main>
 
+<main>
+    <section class="slideshow">
+        {% include slideshow.html %}
+    </section>
+    <section class="content">
     {{page.content}}
+    </section>
+    <section class="sidebar">
+        {% include sidebar.html %}
+    </section>
 </main>
+
 <footer>
-   <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/valchevgd">&copy;valchevgd</a></p>
+    {% include footer.html %}
 </footer>
 </body>
 </html>

@@ -1,0 +1,20 @@
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 'slide slide'
+    'content sidebar';
+}
+
+.slideshow{
+    grid-area: slide;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
