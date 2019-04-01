@@ -1,0 +1,30 @@
+footer{
+    background: #3371FF;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+footer section{
+    width: 30%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer .footer-nav ul li:not(last-child),
+footer .info ul li:nth-child(2),
+footer .info ul li:nth-child(4){
+    padding-bottom: 0.3rem;
+}
+
+footer .icons ul{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}

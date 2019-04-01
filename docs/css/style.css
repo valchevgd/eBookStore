@@ -4,6 +4,7 @@
 @import "gird.css";
 @import "slideshow.css";
 @import "heading.css";
+@import "footer.css";
 
 body{
     max-width: 90%;
@@ -14,17 +15,7 @@ main{
     background-color: #cccccc;
 }
 
-footer{
-    text-align: center;
-    background: #3371FF;
-}
-
 a{
     text-decoration: none;
     color: white;
-    font-weight: bold;
-}
-
-footer a{
-    color: black;
 }
