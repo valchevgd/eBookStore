@@ -1,6 +1,6 @@
 <div class="slideshow-container">
     <div class="my-slide">
-        <div class="text">Sale: <span id="sale"><a href="#">Book One Price:$12</a></span></div>
+        <div><span class="sale">Sale: </span><span id="sale"><a href="#">Book One Price:$12</a></span></div>
     </div>
 </div>
 
@@ -11,7 +11,9 @@
 
     function showSlides() {
 
-        let books = ['Book One Price $12', 'Book Two Price $10', 'Book Three price $15'];
+        let books = ['Book Name: The Name of First Book, Author: The name of Author, Price: $12',
+        'Book Name: The Name of Second Book, Author: The name of Author, Price: $10',
+        'Book Name: The Name of Third Book, Author: The name of Author, Price: $15'];
         let slide = document.getElementById('sale');
 
         slide.innerHTML = `<a href="#">${books[slideIndex]}</a>`;
