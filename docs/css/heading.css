@@ -4,3 +4,21 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+@media (max-width: 1024px) {
+    .img{
+        height: 15vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .img{
+        height: 10vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .img{
+        display: none;
+    }
+}

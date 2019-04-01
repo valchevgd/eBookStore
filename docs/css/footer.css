@@ -28,3 +28,10 @@ footer .icons ul{
     justify-content: space-around;
     padding-bottom: 1rem;
 }
+
+@media (max-width: 600px) {
+
+    footer section{
+        width: 45%;
+    }
+}

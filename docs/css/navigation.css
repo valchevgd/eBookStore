@@ -1,16 +1,16 @@
-.nav{
+.nav {
     display: flex;
     background: #3371FF;
     font-size: 20px;
     align-items: center;
 }
 
-.nav > ul{
+.nav > ul {
     display: flex;
     margin-left: auto;
 }
 
-.nav > ul > ul li{
+.nav > ul > ul li {
     display: block;
     margin-right: 0;
 }
@@ -24,7 +24,7 @@
     position: relative;
 }
 
-.nav span.site-title{
+.nav span.site-title {
     padding: 0.5rem 0 0.5rem 2rem;
     font-size: 1.2em;
 }
@@ -49,9 +49,34 @@
     box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.3);
 }
 
-.nav li:hover > ul{
+.nav li:hover > ul {
     opacity: 1;
     pointer-events: all;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    z-index: 10;
+}
+
+@media (max-width: 800px) {
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .nav span.site-title{
+        padding: 0.5rem 0;
+    }
+
+    .nav > ul ul{
+        right: -100%;
+    }
 }
