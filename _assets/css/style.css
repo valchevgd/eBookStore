@@ -5,6 +5,9 @@
 @import "slideshow.css";
 @import "heading.css";
 @import "footer.css";
+@import "forms.css";
+@import "buttons.css";
+
 
 body{
     max-width: 90%;
