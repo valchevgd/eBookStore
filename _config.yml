@@ -8,7 +8,7 @@ url: ""
 github_username:  valchevgd
 exclude: [_assets, node_modules, gulpfile.js, Gemfile, Gemfile.lock, package.json, package-lock.json]
 # Build settings
-markdown: kramdown
+#markdown: kramdown
 plugins:
   - jekyll-feed
 

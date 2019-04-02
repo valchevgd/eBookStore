@@ -1,5 +1,41 @@
-<aside>
-    <section>
-        <p>Side bat goes here</p>
-    </section>
-</aside>
+<h3>Comments: </h3>
+
+<section class="comments">
+    <article>
+        <header>
+            <small>From :</small>
+            <h4>Pesho</h4>
+        </header>
+        <p>This is a very important comment!</p>
+    </article>
+    <article>
+        <header>
+            <small>From :</small>
+            <h4>Joe Doe</h4>
+        </header>
+        <p>I cant find all of my favorites books here! Im so happy!</p>
+    </article>
+    <article>
+        <header>
+            <small>From :</small>
+            <h4>Mr. Smith</h4>
+        </header>
+        <p>Lorem ipsum comment here!</p>
+    </article>
+    <article>
+        <header>
+            <small>From :</small>
+            <h4>Pesho</h4>
+        </header>
+        <p>Another very important comment py Pesho!</p>
+    </article>
+    <article>
+        <header>
+            <small>From :</small>
+            <h4>Admin</h4>
+        </header>
+        <p>Pesho, please stop with this SPAM!</p>
+    </article>
+</section>
+<textarea cols="20" rows="3" placeholder="Add a comment..."></textarea>
+<button class="btn" {% if page.title == 'Home' %} disabled="disabled" title="Log in to post comments" {% endif %}>Add Comment</button>

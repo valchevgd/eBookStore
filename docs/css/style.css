@@ -7,6 +7,7 @@
 @import "footer.css";
 @import "forms.css";
 @import "buttons.css";
+@import "sidebar.css";
 
 
 body{
@@ -21,7 +22,7 @@ body{
 }
 
 main{
-    background-color: #cccccc;
+    background-color: #ffebcd;
 }
 
 a{

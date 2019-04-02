@@ -1,0 +1,42 @@
+.sidebar{
+    border: 2px solid white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    background: #deb887 ;
+    box-shadow: 5px 7px #deb998;
+}
+
+.sidebar article{
+    padding: 0.5rem;
+}
+
+.sidebar h4{
+    display: inline;
+}
+
+.sidebar textarea{
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem
+}
+
+@media (max-width: 1024px) {
+
+    .sidebar .comments{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+    }
+
+    .sidebar .btn{
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .sidebar .comments{
+        display: block;
+    }
+}

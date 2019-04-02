@@ -1,6 +1,6 @@
 <nav class="nav">
     <span class="site-title"><a href="../home">eBookStore</a></span>
-
+    
     <ul>
         {% for page in site.pages %}
         {% if page.url != '/feed.xml' and page.url != '/' %}
@@ -12,8 +12,8 @@
         </li>
         {% endif %}
         {% endfor %}
-        {% if page.title == 'Home' or page.title == 'About' %}
-        <li>Register
+        {% if page.title == 'Home' %}
+        <li>Register <i class="fas fa-sort-down"></i>
             <ul>
                 <li>
                     <form class="form">
@@ -28,7 +28,7 @@
                 </li>
             </ul>
         </li>
-        <li>Log In
+        <li>Log In <i class="fas fa-sort-down"></i>
             <ul>
                 <li>
                     <form class="form">

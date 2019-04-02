@@ -9,4 +9,10 @@
 
 .btn:hover{
     cursor: pointer;
+    background: white;
+    color: #6495ed;
+}
+
+.btn:disabled:hover{
+    cursor: none;
 }

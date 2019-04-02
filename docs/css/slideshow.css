@@ -1,12 +1,12 @@
 .slideshow-container{
-    background: yellowgreen;
+    background: #deb887;
     color: white;
     padding: 0.5rem;
 }
 
 .sale{
     font-size: 20px;
-    color: red;
+    color: #dc143c;
     font-weight: bold;
 }
 
