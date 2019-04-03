@@ -30,9 +30,18 @@
     justify-content: space-around;
 }
 
-.auth .btn,
-.cart .btn{
+.auth span,
+.cart span{
     text-shadow: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.auth span:hover,
+.cart span:hover{
+    cursor: pointer;
+    color: #deb887;
+    text-decoration: underline;
 }
 
 /* @media (max-width: 1024px) {
