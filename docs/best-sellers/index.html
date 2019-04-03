@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eBookStore | Best Sellers</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <section class="img"></section>
+    <nav class="nav">
+    <span class="site-title"><a href="../home">eBookStore</a></span>
+    
+    <ul>
+        
+        
+        <li>
+            <a href="/best-sellers/">
+                <span class="title">Best Sellers</span>
+                <span class="date"></span>
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/home/">
+                <span class="title">Home</span>
+                <span class="date"></span>
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            Cart <i class="fas fa-shopping-cart"></i>
+            <ul>
+                <li><p>Order One</p></li>
+                <li><p>Order Two</p></li>
+            </ul>
+        </li>
+        
+    </ul>
+
+
+</nav>
+
+</header>
+
+<main>
+    <section class="slideshow">
+        <div class="slideshow-container">
+    <div class="my-slide">
+        <div><span class="sale">Sale: </span><span id="sale"><a href="#">Book One Price:$12</a></span></div>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+
+    function showSlides() {
+
+        let books = ['Book Name: The Name of First Book, Author: The name of Author, Price: $12',
+        'Book Name: The Name of Second Book, Author: The name of Author, Price: $10',
+        'Book Name: The Name of Third Book, Author: The name of Author, Price: $15'];
+        let slide = document.getElementById('sale');
+
+        slide.innerHTML = `<a href="#">${books[slideIndex]}</a>`;
+
+        slideIndex++;
+        if (slideIndex >= books.length) {
+            slideIndex = 0
+        }
+
+        setTimeout(showSlides, 5000);
+    }
+</script>
+    </section>
+    <section class="content">
+    <section>Main part</section>
+    </section>
+    <section class="sidebar">
+        <h3>Comments: </h3>
+
+<section class="comments">
+    <article>
+        <header>
+            <small>From :</small>
+            <h4>Pesho</h4>
+        </header>
+        <p>This is a very important comment!</p>
+    </article>
+    <article>
+        <header>
+            <small>From :</small>
+            <h4>Joe Doe</h4>
+        </header>
+        <p>I cant find all of my favorites books here! Im so happy!</p>
+    </article>
+    <article>
+        <header>
+            <small>From :</small>
+            <h4>Mr. Smith</h4>
+        </header>
+        <p>Lorem ipsum comment here!</p>
+    </article>
+    <article>
+        <header>
+            <small>From :</small>
+            <h4>Pesho</h4>
+        </header>
+        <p>Another very important comment py Pesho!</p>
+    </article>
+    <article>
+        <header>
+            <small>From :</small>
+            <h4>Admin</h4>
+        </header>
+        <p>Pesho, please stop with this SPAM!</p>
+    </article>
+</section>
+<textarea cols="20" rows="3" placeholder="Add a comment..."></textarea>
+<button class="btn" >Add Comment</button>
+    </section>
+</main>
+
+<footer>
+    
+    <section>
+        <nav class="footer-nav">
+            <ul>
+                
+                
+                <li>
+                    <a href="/best-sellers/">
+                        <span class="title">Best Sellers</span>
+                        <span class="date"></span>
+                    </a>
+                </li>
+                
+                
+                
+                <li>
+                    <a href="/home/">
+                        <span class="title">Home</span>
+                        <span class="date"></span>
+                    </a>
+                </li>
+                
+                
+                
+                
+                
+                
+            </ul>
+        </nav>
+    </section>
+
+    <section class="info">
+        <ul>
+            <li>Address:</li>
+            <li>BookStore Str.</li>
+            <li>Email:</li>
+            <li>eBookStore@books.com</li>
+            <li>Phone:</li>
+            <li>+555 879 546 213</li>
+        </ul>
+    </section>
+
+    <section class="icons">
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+        </ul>
+        <p>All rights reserved by <a target="_blank" href="https://github.com/valchevgd">&copy;valchevgd</a></p>
+    </section>
+
+</footer>
+</body>
+</html>
