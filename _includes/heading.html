@@ -7,12 +7,25 @@
     
     {% if page.title == 'Home' %}
         <div class="auth">
-            <span>Register <i class="fas fa-arrow-circle-right"></i></span>  <span>Login <i class="fas fa-arrow-circle-right"></i></span>
+            <span id="register">Register <i class="fas fa-arrow-circle-right"></i></span>  <span id="login">Login <i class="fas fa-arrow-circle-right"></i></span>
         </div>
     {%else%}
         <div class="cart">
-            <span>Cart</span>
+            <span>Cart <i class="fas fa-shopping-cart"></i></span>
         </div>    
     {% endif %}
-       
 </section>
+
+{% include register.html %}
+
+<script>
+    document.getElementById('register').addEventListener('click', () => {
+       let form = document.getElementsByClassName('register')[0];
+       form.style.opacity = "1";
+       form.style.pointerEvents = "all";
+
+       document.getElementsByTagName('cancel')[0].addEventListener('click', () => {
+           form.style.opacity = "0";
+       })
+    })
+</script>

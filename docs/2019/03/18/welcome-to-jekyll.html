@@ -9,7 +9,7 @@
 <header>
     <section class="heading">
     <nav class="nav">
-    <span class="site-title"><a href="../home">eBookStore</a></span>
+    <span class="site-title"><a href="../">eBookStore</a></span>
     
     <ul>
         
@@ -38,11 +38,41 @@
     
     
         <div class="cart">
-            <span>Cart</span>
+            <span>Cart <i class="fas fa-shopping-cart"></i></span>
         </div>    
     
-       
 </section>
+
+<form class="form register">
+    <p>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+    </p>
+    <p>
+        <label for="password">Password</label>
+        <input type="password" id="password">
+    </p>
+    <p>
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password">
+    </p>
+    <p>
+        <button class="btn cancel">Cancel</button>
+        <button class="btn">Register</button>
+    </p>
+</form>
+
+<script>
+    document.getElementById('register').addEventListener('click', () => {
+       let form = document.getElementsByClassName('register')[0];
+       form.style.opacity = "1";
+       form.style.pointerEvents = "all";
+
+       document.getElementsByTagName('cancel')[0].addEventListener('click', () => {
+           form.style.opacity = "0";
+       })
+    })
+</script>
     
 </header>
 
