@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>eBookStore | Welcome to Jekyll!</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
 <header>
-    <section class="img"></section>
+    <section class="heading">
     <nav class="nav">
     <span class="site-title"><a href="../home">eBookStore</a></span>
     
@@ -35,27 +35,31 @@
         
         
         
-        
-        <li>
-            Cart <i class="fas fa-shopping-cart"></i>
-            <ul>
-                <li><p>Order One</p></li>
-                <li><p>Order Two</p></li>
-            </ul>
-        </li>
-        
     </ul>
 
 
 </nav>
 
+
+    <h1>Find Your Favorite Book Here!</h1>
+    <h3>Anytime, Anywhere you are!</h3>
+    <p>Relax take it easy</p>
+    
+    
+        <div class="cart">
+            <span class="btn">Cart</span>
+        </div>    
+    
+       
+</section>
+    
 </header>
 
 <main>
     <section class="slideshow">
         <div class="slideshow-container">
     <div class="my-slide">
-        <div><span class="sale">Sale: </span><span id="sale"><a href="#">Book One Price:$12</a></span></div>
+        <div><span class="sale">Sale: </span><span id="sale"><a href="#"></a></span></div>
     </div>
 </div>
 
@@ -70,7 +74,7 @@
         'Book Name: The Name of Second Book, Author: The name of Author, Price: $10',
         'Book Name: The Name of Third Book, Author: The name of Author, Price: $15'];
         let slide = document.getElementById('sale');
-
+        
         slide.innerHTML = `<a href="#">${books[slideIndex]}</a>`;
 
         slideIndex++;
@@ -78,7 +82,10 @@
             slideIndex = 0
         }
 
-        setTimeout(showSlides, 5000);
+        setTimeout(() => {
+            showSlides()
+        }, 3000);
+        
     }
 </script>
     </section>
@@ -100,43 +107,38 @@
 
     </section>
     <section class="sidebar">
-        <h3>Comments: </h3>
+        <h3>Comments</h3>
 
 <section class="comments">
     <article>
         <header>
-            <small>From :</small>
-            <h4>Pesho</h4>
+            <h4>Pesho:</h4>
         </header>
         <p>This is a very important comment!</p>
     </article>
     <article>
         <header>
-            <small>From :</small>
-            <h4>Joe Doe</h4>
+            <h4>Joe Doe:</h4>
         </header>
         <p>I cant find all of my favorites books here! Im so happy!</p>
     </article>
     <article>
         <header>
-            <small>From :</small>
-            <h4>Mr. Smith</h4>
+            <h4>Mr. Smith:</h4>
         </header>
         <p>Lorem ipsum comment here!</p>
     </article>
     <article>
         <header>
-            <small>From :</small>
-            <h4>Pesho</h4>
+            <h4>Pesho:</h4>
         </header>
         <p>Another very important comment py Pesho!</p>
     </article>
     <article>
         <header>
-            <small>From :</small>
-            <h4>Admin</h4>
+            <h4>Admin:</h4>
         </header>
-        <p>Pesho, please stop with this SPAM!</p>
+        <p>Pesho, please stop with the SPAM!</p>
     </article>
 </section>
 <textarea cols="20" rows="3" placeholder="Add a comment..."></textarea>

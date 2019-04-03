@@ -1,7 +1,7 @@
 @import "typography.css";
 @import "working.css";
 @import "navigation.css";
-@import "gird.css";
+@import "grid.css";
 @import "slideshow.css";
 @import "heading.css";
 @import "footer.css";
@@ -11,7 +11,7 @@
 
 
 body{
-    max-width: 90%;
+    max-width: 75%;
     margin: 0 auto;
 }
 

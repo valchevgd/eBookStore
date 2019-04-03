@@ -1,1 +1,18 @@
-<section class="img"></section>
+<section class="heading">
+    {% include navigation.html %}
+
+    <h1>Find Your Favorite Book Here!</h1>
+    <h3>Anytime, Anywhere you are!</h3>
+    <p>Relax take it easy</p>
+    
+    {% if page.title == 'Home' %}
+        <div class="auth">
+            <span class="btn">Register</span>  <span class="btn">Login</span>
+        </div>
+    {%else%}
+        <div class="cart">
+            <span class="btn">Cart</span>
+        </div>    
+    {% endif %}
+       
+</section>

@@ -2,15 +2,16 @@
     color: white;
     background: none;
     border: 1px solid white;
-    padding: 0.5rem;
+    padding: 0.8rem 1rem;
     margin-top: 0.2rem;
     border-radius: 0.3rem;
+    font-weight: bold;
 }
 
 .btn:hover{
     cursor: pointer;
     background: white;
-    color: #6495ed;
+    color: #d2691e;
 }
 
 .btn:disabled:hover{

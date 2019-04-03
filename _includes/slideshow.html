@@ -1,6 +1,6 @@
 <div class="slideshow-container">
     <div class="my-slide">
-        <div><span class="sale">Sale: </span><span id="sale"><a href="#">Book One Price:$12</a></span></div>
+        <div><span class="sale">Sale: </span><span id="sale"><a href="#"></a></span></div>
     </div>
 </div>
 
@@ -15,7 +15,7 @@
         'Book Name: The Name of Second Book, Author: The name of Author, Price: $10',
         'Book Name: The Name of Third Book, Author: The name of Author, Price: $15'];
         let slide = document.getElementById('sale');
-
+        
         slide.innerHTML = `<a href="#">${books[slideIndex]}</a>`;
 
         slideIndex++;
@@ -23,6 +23,9 @@
             slideIndex = 0
         }
 
-        setTimeout(showSlides, 5000);
+        setTimeout(() => {
+            showSlides()
+        }, 3000);
+        
     }
 </script>

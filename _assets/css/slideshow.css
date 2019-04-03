@@ -1,23 +1,14 @@
 .slideshow-container{
     background: #deb887;
-    color: white;
     padding: 0.5rem;
+}
+
+.slideshow-container a {
+    color: #111111;
 }
 
 .sale{
     font-size: 20px;
     color: #dc143c;
     font-weight: bold;
-}
-
-#sale {
-    animation-name: example;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-@keyframes example {
-    from {opacity: 0;}
-    to {opacity: 1; }
 }
