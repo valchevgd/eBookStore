@@ -1,0 +1,31 @@
+@import "typography";
+@import "navigation";
+@import "grid";
+@import "slideshow";
+@import "heading";
+@import "footer";
+@import "forms";
+@import "buttons";
+@import "sidebar";
+
+
+body{
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+@media (max-width: 800px) {
+    body{
+        max-width: 100%;
+    }
+}
+
+main{
+    background-color: #ffebcd;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

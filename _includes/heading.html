@@ -24,8 +24,11 @@
        form.style.opacity = "1";
        form.style.pointerEvents = "all";
 
-       document.getElementsByTagName('cancel')[0].addEventListener('click', () => {
-           form.style.opacity = "0";
-       })
+    if(form.style.opacity == "1"){
+        document.getElementsByTagName('cancel')[0].addEventListener('click', () => {
+            form.style.opacity = "0";
+        })
+    }
+       
     })
 </script>

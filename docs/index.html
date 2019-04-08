@@ -43,23 +43,46 @@
     
 </section>
 
+
+
 <form class="form register">
-    <p>
-        <label for="email">Email</label>
-        <input type="email" id="email">
-    </p>
-    <p>
-        <label for="password">Password</label>
-        <input type="password" id="password">
-    </p>
-    <p>
-        <label for="confirm_password">Confirm Password</label>
-        <input type="password" id="confirm_password">
-    </p>
-    <p>
-        <button class="btn cancel">Cancel</button>
-        <button class="btn">Register</button>
-    </p>
+    <fieldset>
+        <legend><h2>Register</h2></legend>
+        <p>
+            <label for="name">Name:</label>
+            <span>
+            <i class="fas fa-user"></i>
+            <input type="text" id="name" placeholder="Dario Petrov">
+        </span>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <span>
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" placeholder="dario@email.com">
+        </span>
+        </p>
+        <p>
+            <label for="phone">Phone number:</label>
+            <span>
+            <i class="fas fa-mobile-alt"></i>
+            <input type="text" id="phone" placeholder="+359 885 445 445">
+        </span>
+        </p>
+        <p>
+            <label for="password">Password
+                <small>(minimum 6 characters)</small>
+                :</label>
+            <span>
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="********">
+        </span>
+        </p>
+        <p>
+            <button class="btn cancel">Cancel</button>
+            <button class="btn">Register</button>
+        </p>
+    </fieldset>
 </form>
 
 <script>
@@ -68,9 +91,12 @@
        form.style.opacity = "1";
        form.style.pointerEvents = "all";
 
-       document.getElementsByTagName('cancel')[0].addEventListener('click', () => {
-           form.style.opacity = "0";
-       })
+    if(form.style.opacity == "1"){
+        document.getElementsByTagName('cancel')[0].addEventListener('click', () => {
+            form.style.opacity = "0";
+        })
+    }
+       
     })
 </script>
     
